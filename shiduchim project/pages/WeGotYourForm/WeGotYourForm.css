@@ -1,0 +1,19 @@
+#got {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    margin-top: 2%;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

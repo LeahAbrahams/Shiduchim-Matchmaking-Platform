@@ -1,0 +1,243 @@
+main {
+    border-radius: 0% 0% 0% 0%;
+}
+
+main img {
+    width: 20%;
+    height: auto;
+    justify-content: space-around;
+}
+
+.main-img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+li {
+    justify-self: center;
+    margin: 3%;
+}
+
+.hotel,
+.park {
+    height: auto;
+    width: 50%;
+}
+
+.hall {
+    height: auto;
+    width: 70%;
+}
+
+.hotel img:hover,
+.park img:hover,
+.hall img:hover {
+    border-top: #e8bf50 5px solid;
+}
+
+.hotel:hover,
+.park:hover,
+.hall:hover {
+    background-color: rgba(255, 241, 159, 0.5);
+    padding: 1%;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+li:hover {
+    /* self-learning */
+    list-style-type: none;
+}
+
+#list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.big-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-pic {
+    /* self-learning */
+    filter: grayscale(40%);
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    /*Doesn't work in other ways - adding space between images */
+}
+
+/* self-learning */
+figcaption {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2%;
+}
+
+/* self-learning */
+figure :hover {
+    border: black 2px solid;
+}
+
+.gallery {
+    display: none;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.gallery:target {
+    display: block;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 7%;
+    height: auto;
+    margin: 1%;
+}
+
+.close {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+}
+
+.iframe {
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+
+/*Duplicate code for readability and convenience*/
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    transition: top 0.5s ease;
+    text-align: center;
+}
+
+.iframe:hover .overlay {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+caption {
+    font-size: xx-large;
+    color: rgba(233, 191, 80);
+}
+
+table {
+    width: 100%;
+}
+
+thead,
+tfoot {
+    background-color: rgb(70, 65, 65);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tbody tr:hover {
+    background-color: lightgoldenrodyellow;
+    transition: background-color 0.3s;
+}
+
+th,
+td {
+    border: 2px solid gray;
+    text-align: center;
+    padding: 1%;
+}
+
+td a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+tfoot th p {
+    animation: scroll 15s linear infinite;
+    width: 100%;
+}
+
+tfoot th p::before {
+    content: ':-) ';
+}
+
+tfoot th p:hover::before {
+    content: '';
+}
+
+tfoot th p:hover::after {
+    content: ' !!!';
+}
+
+/* self-learning */
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 700px) {
+    li {
+        font-size: small;
+    }
+
+    th,
+    td {
+        font-size: small;
+        padding: 1%;
+    }
+
+    .images img {
+        width: 15%;
+    }
+
+    .hotel,
+    .park {
+        height: auto;
+        width: 100%;
+    }
+
+    .hotel img:hover,
+    .park img:hover,
+    .hall img:hover {
+        border-top: #e8bf50 2px solid;
+    }
+}

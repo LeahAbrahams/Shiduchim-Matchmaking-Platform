@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cube-container {
+    /* self-learning */
+    /* Distance from the observable object, the farther away the less deformed */
+    position: relative;
+    perspective: 1200px;
+}
+
+.cube {
+    width: 300px;
+    height: 300px;
+    /* self-learning */
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    animation: spin 20s infinite linear;
+}
+
+.cube:hover {
+    /* self-learning */
+    animation-play-state: paused;
+}
+
+.faceTop,
+.faceBottom,
+.faceFront,
+.faceBack,
+.faceLeft,
+.faceRight {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(08, 08, 08, 0.8);
+}
+
+.faceFront {
+    /* self-learning */
+    background-image: url(../../images/Conversation\ topics\ for\ dates.png);
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.faceBack {
+    background-image: url(../../images/Questions\ and\ answers\ about\ the\ Jewish\ home.png);
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.faceLeft {
+    background-image: url(../../images/DorechTov.png);
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.faceRight {
+    background-image: url(../../images/training\ course.png);
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.faceTop {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.faceBottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    align-self: flex-end;
+    margin: 5%;
+    background-color: yellow;
+    padding: 1%;
+}

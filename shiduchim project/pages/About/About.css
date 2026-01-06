@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 img{
+    height: 6rem;
+    width: auto;
+}
+
+h3,
+span {
+    /* white-space:pre-line; */
+    direction: ltr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+h3 a {
+    text-decoration: underline;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+h3 a:hover {
+    text-decoration: none;
+}
+
+.Recommendations {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+    padding: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text {
+    direction: rtl;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.author {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    overflow: hidden;
+    position: relative;
+    height: 175vh;
+}
+
+@media (max-width: 700px) {
+    aside {
+        height: 200vh;
+    }
+}

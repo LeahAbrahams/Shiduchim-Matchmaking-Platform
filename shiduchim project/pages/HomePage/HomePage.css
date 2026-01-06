@@ -1,0 +1,102 @@
+.ingaged {
+    text-align: center;
+    color: rgba(233, 191, 80, 1);
+    background-color: white;
+    border-bottom: 1px rgba(233, 191, 80, 1) solid;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+}
+
+aside {
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(233, 191, 80, 1);
+    z-index: 0;
+}
+
+.scrolling {
+    z-index: 1;
+    height: 100%;
+    animation: scroll 5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* self-learning */
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    display: inline;
+    margin: 1%;
+    max-width: 30%;
+}
+
+.container img {
+    width: 100%;
+    height: 300px;
+}
+
+.container img:hover {
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    transition: top 0.5s ease;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+
+    .ingaged {
+        font-size: small;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .scrolling {
+        animation: scroll 15s linear infinite;
+    }
+}

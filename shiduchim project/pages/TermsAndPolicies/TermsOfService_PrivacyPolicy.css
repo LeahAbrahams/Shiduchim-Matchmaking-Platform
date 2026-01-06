@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+    direction: rtl;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1 {
+    text-shadow: 0.1rem 0.1rem #e8bf50;
+    color: black;
+    /* self-learning  */
+    animation: type 3s steps(40) 0s 1 normal both;
+    white-space: nowrap;
+    /*- All the writing should be in the same line */
+    overflow: hidden;
+    /* - Critical for proper use of animation */
+    direction: rtl;
+    position: relative;
+    /* Final Stop */
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* self-learning : Quick-scroll opening effect*/
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+h1:hover {
+    color: #e8bf50;
+    text-shadow: 0.1rem 0.1rem black;
+    transition: color 0.3s ease;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #e8bf50;
+    margin-top: 10px;
+    opacity: 0;
+    animation: underlineAppear 2s ease-out forwards 1s;
+}
+
+@keyframes underlineAppear {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 5%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}

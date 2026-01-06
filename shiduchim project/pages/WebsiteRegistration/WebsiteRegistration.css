@@ -1,0 +1,165 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: slide-animation 12s infinite;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+@keyframes slide-animation {
+    0% {
+        background-image: url('../../images/cccccc3.png')
+    }
+
+    33% {
+        background-image: url('../../images/ccccccccc2.png');
+    }
+
+    66% {
+        background-image: url('../../images/cccccccc1.png')
+    }
+
+    100% {
+        background-image: url('../../images/chopa.png');
+    }
+}
+
+.dynamic {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: 1px gray solid;
+    padding: 1%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+fieldset,
+div {
+    margin: 1%;
+}
+
+select option:nth-child(even) {
+    background-color: lightgray;
+}
+
+input:required:invalid {
+    border-color: red;
+}
+
+input {
+    border-color: green;
+}
+
+input:required:invalid::before {
+    content: '*';
+    color: red;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50%;
+    padding: 3%;
+    margin: 3%;
+    box-shadow: 0 5px 5px 0 rgb(182, 182, 182);
+}
+
+@media print {
+
+    /* self-learning */
+    @page {
+        size: A4;
+    }
+
+    form {
+        border: none;
+    }
+
+    header,
+    footer,
+    button {
+        display: none;
+    }
+
+    fieldset,
+    input,
+    textarea,
+    select {
+        width: 100%;
+        font-size: 16px;
+        padding: 1%;
+        margin: 1%;
+    }
+
+    fieldset {
+        border: 1px solid black;
+    }
+}
+
+/* The default, the cube is hidden*/
+#iframeContainer {
+    position: fixed;
+    top: 20%;
+    right: 0%;
+    display: none;
+    z-index: 10;
+}
+
+/* Showing the cube when a button mode is changed*/
+#toggleButton:active+#iframeContainer,
+#toggleButton:focus+#iframeContainer {
+    display: block;
+}
+
+#toggleButton {
+    position: fixed;
+    top: 15%;
+    right: 5%;
+    background-color: rgba(255, 241, 159, 1);
+    color: black;
+    padding: 1% 1%;
+    cursor: pointer;
+    z-index: 20;
+    border-radius: 0 0 50% 50%;
+    border: 1px solid rgba(255, 241, 159, 1);
+}
+
+.closeButton {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 50% 0 0 50%;
+}
+
+.closeButton:active {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .closeButton,
+    #iframeContainer,
+    #toggleButton {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}

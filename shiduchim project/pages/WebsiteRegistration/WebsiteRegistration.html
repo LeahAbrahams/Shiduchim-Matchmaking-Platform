@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website registration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="WebsiteRegistration.css">
+    <link rel="icon" type="image/x-icon" href="../../images/ttttttttttttt (8).png" /* self-learning * />
+</head>
+
+<body>
+    <a href="#top">
+        <div class="button-container">
+            <div class="ring ring1"></div>
+            <div class="ring ring2"></div>
+            <div class="ring ring3"></div>
+            <button class="button">🔝</button>
+        </div>
+    </a>
+    <p id="top"></p>
+    <header>
+        <a href="../HomePage/HomePage.html" title="לעמוד הבית לחץ כאן"><img src="../../images/ttttttttttttt (9).png"></a>
+        <nav>
+            <a href="../HomePage/HomePage.html">Home page</a>
+            <a href="../About/About.html">About</a>
+            <a href="../Topics/Topics.html">Topics</a>
+        </nav>
+    </header>
+    <div class="dynamic">
+        <!-- novalidate -->
+        <form action="../WeGotYourForm/WeGotYourForm.html" method="get">
+            <h2>Submitting your resume</h2>
+            <div>
+                <label for="UserNameId"> Your name:</label>
+                <input id="UserNameId" name="UserName" type="text" minlength="2" maxlength="25" placeholder="me"
+                    required>
+            </div>
+            <div>
+                <label for="UserPhoneNumberId"> Your phone number:</label>
+                <input id="UserPhoneNumberId" name="UserPhoneNumber" type="text" placeholder="055-1234567" required>
+            </div>
+            <div>
+                <label for="UserEmailAdressId"> Your email adress:</label>
+                <input id="UserEmailAdressId" name="UserEmailAdress" type="email" placeholder="me@gmail.com">
+            </div>
+            <div>
+                <label for="UserAgeId"> Your age: </label>
+                <input id="UserAgeId" name="UserAge" type="number" min="18" max="120" step="1" placeholder="18-120"
+                    required>
+            </div>
+            <div>
+                <label for="UserPasswordId"> Your password:</label>
+                <input id="UserPasswordId" name="UserPassword" type="password" minlength="5" maxlength="50"
+                    placeholder="me❤me" required>
+            </div>
+            <fieldset>
+                <legend> your community:</legend>
+                <label for="LitvakeshId">Litvakesh</label>
+                <input id="LitvakeshId" name="community" value="Litvakesh" type="radio">
+                <label for="chasideshId">Chasidesh</label>
+                <input id="chasideshId" name="community" value="chasidesh" type="radio">
+                <label for="sfardiId">Sfardi</label>
+                <input id="sfardiId" name="community" value="sfardi" type="radio">
+                <label for="Other'sId">Other's</label>
+                <input id="Other'sId" name="community" value="Other's" type="radio" checked>
+            </fieldset>
+            <fieldset>
+                <legend>man / woman:</legend>
+                <label for="woman">woman</label>
+                <input id="woman" name="man/woman" value="woman" type="radio" checked>
+                <label for="man">man</label>
+                <input id="man" name="man/woman" value="man" type="radio">
+            </fieldset>
+            <div>
+                <label for="PersonalStatus">Personal status:</label>
+                <br>
+                <select name="PersonalStatus" id="PersonalStatus">
+                    <option value="רווק.ה" selected>רווק.ה</option>
+                    <option value="גרוש.ה">גרוש.ה</option>
+                    <option value="אלמנ.ה">אלמנ.ה</option>
+                    <option value="+גרוש.ה">+ גרוש.ה</option>
+                    <option value="+אלמנ.ה">+ אלמנ.ה</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">Your preferred language:</label>
+                <input list="language-list" name="language" id="languageId" placeholder="Start typing..." /*
+                    self-learning * />
+                <datalist id="language-list">
+                    <option value="Hebrew">
+                    <option value="English">
+                    <option value="Yiddish">
+                    <option value="Arabic">
+                    <option value="Other">
+                </datalist>
+            </div>
+            <div>
+                <label for="CVID"> Attach CV</label>
+                <input id="CVId" name="CV" type="file" multiple accept=".pdf .jpeg .jpg" required>
+            </div>
+            <div>
+                <label for="TextareaId"></label>
+                <br>
+                <textarea name="Textarea" id="TextareaId" cols="60" rows="5"
+                    placeholder="Something else you would like to tell us about you..." maxlength="500"></textarea>
+            </div>
+            <div id="button">
+                <button type="submit">📨 submit</button>
+                <button type="reset">🔃 reset</button>
+                <button class="print-button" onclick="window.print()" /* self-learning * />🖨️ Print</button>
+            </div>
+        </form>
+        <button id="toggleButton">Additional links</button>
+        <div id="iframeContainer">
+            <iframe src="bestCube.html" frameborder="0" width="500px" height="500px" id="iframeCube"></iframe>
+            <button class="closeButton">✖</button>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 בית נאמן | <a href="../TermsAndPolicies/TermsOfService.html">תנאי שירות</a> | <a
+                href="../TermsAndPolicies/PrivacyPolicy.html">מדיניות פרטיות</a></p>
+        <p> leah abrahams & shira shakarov &copy;</p>
+        <p>פל': <a href="tel:+972556765980">0556765980</a> | <a href="tel:+972556780900">0556780900</a></p>
+        <p><a href="mailto:LeahAbrahams123456@gmail.com">LeahAbrahams123456@gmail.com</a> | <a
+                href="mailto:ss0556765980@gmail.com">ss0556765980@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>
