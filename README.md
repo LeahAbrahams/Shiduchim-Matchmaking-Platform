@@ -7,7 +7,6 @@ This project showcases the frontend architecture of a specialized matchmaking pl
 ## Tech Stack
 - **HTML5:** Semantic structure and accessible content organization.
 - **CSS3:** Custom styling, including Flexbox and Grid layouts for complex data display.
-- **JavaScript:** Client-side interactions and form handling.
 
 ## Key Design Features
 - **User-Centric Architecture:** A clean, professional layout designed for high readability and ease of navigation.
