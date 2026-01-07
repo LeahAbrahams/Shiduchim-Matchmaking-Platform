@@ -1,7 +1,5 @@
 # Shiduchim - Matchmaking Platform UI
 
-[![View Live Site](https://img.shields.io/badge/Live_Demo-Online-green?style=for-the-badge&logo=github)](https://leahabrahams.github.io/Shiduchim-Matchmaking-Platform/)
-
 A professional web interface designed for a matchmaking system, focusing on clean UI/UX and responsive design. This project demonstrates a modern digital approach to specialized matchmaking workflows.
 
 ## 🔗 Live Preview
