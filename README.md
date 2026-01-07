@@ -33,6 +33,6 @@ This project showcases the frontend architecture of a specialized matchmaking pl
 ## 🚀 Installation & Usage
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git](https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git)
+    git clone https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git
     ```
 2.  **Open the project:** Launch `index.html` in any modern web browser to view the interface.
