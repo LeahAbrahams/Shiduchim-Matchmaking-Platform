@@ -1,26 +1,38 @@
 # Shiduchim - Matchmaking Platform UI
-A professional web interface designed for a traditional Jewish matchmaking system, focusing on clean UI/UX and responsive design.
 
-## Project Overview
-This project showcases the frontend architecture of a specialized matchmaking platform. The design emphasizes a respectful and intuitive user experience, tailored to the specific functional requirements of the Shiduchim process. It demonstrates the ability to translate cultural needs into a modern digital product.
+[![View Live Site](https://img.shields.io/badge/Live_Demo-Online-green?style=for-the-badge&logo=github)](https://leahabrahams.github.io/Shiduchim-Matchmaking-Platform/)
 
-## Tech Stack
-- **HTML5:** Semantic structure and accessible content organization.
-- **CSS3:** Custom styling, including Flexbox and Grid layouts for complex data display.
+A professional web interface designed for a matchmaking system, focusing on clean UI/UX and responsive design. This project demonstrates a modern digital approach to specialized matchmaking workflows.
 
-## Key Design Features
-- **User-Centric Architecture:** A clean, professional layout designed for high readability and ease of navigation.
-- **Detailed Candidate Profiles:** Structured sections for displaying comprehensive background information, education, and preferences.
-- **Responsive Web Design:** Fully optimized for desktop, tablet, and mobile devices to ensure a seamless experience across all platforms.
-- **Specialized Workflows:** Custom-built components for matchmakers (Shadchanim) and applicants, including registration funnels and informative landing pages.
+## 🔗 Live Preview
+The platform is deployed and available at:
+**[https://leahabrahams.github.io/Shiduchim-Matchmaking-Platform/](https://leahabrahams.github.io/Shiduchim-Matchmaking-Platform/)**
 
-## Project Structure
-- **HomePage:** The main entry point featuring the platform's value proposition.
-- **WebsiteRegistration:** A multi-step form process for profile creation.
-- **Topics & About:** Informational pages providing guidance and platform details.
-- **Terms & Policies:** Legal and privacy documentation for user trust.
+---
 
-## Installation and Preview
-1. Clone the repository:
-   git clone https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git
-2. Open `shiduchim project/pages/HomePage/HomePage.html` in any modern web browser to view the project.
+## 📝 Project Overview
+This project showcases the frontend architecture of a specialized matchmaking platform. The design emphasizes a respectful and intuitive user experience, tailored to specific functional requirements. It demonstrates the ability to translate complex workflows into a modern, accessible digital product.
+
+## 🛠 Tech Stack
+* **HTML5:** Semantic structure and accessible content organization.
+* **CSS3:** Custom styling, including Flexbox and Grid layouts.
+* **GitHub Pages:** Automated deployment and hosting.
+
+## ✨ Key Features
+* **User-Centric Design:** Clean, professional layout for high readability.
+* **Detailed Profiles:** Structured sections for background information and preferences.
+* **Responsive Layout:** Optimized for desktop, tablet, and mobile devices.
+* **Specialized Workflows:** Custom components for registration and informative landing pages.
+
+## 📂 Project Structure
+* **index.html:** Main entry point (Root).
+* **shiduchim project/pages:** Core application pages.
+* **WebsiteRegistration:** Multi-step profile creation forms.
+* **About & Policies:** Guidance and privacy documentation.
+
+## 🚀 Installation & Usage
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git](https://github.com/LeahAbrahams/Shiduchim-Matchmaking-Platform.git)
+    ```
+2.  **Open the project:** Launch `index.html` in any modern web browser to view the interface.
